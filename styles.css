@@ -171,27 +171,26 @@ ul{padding:0;margin:0;list-style:none}
 /* ----- Hero ----- */
 .hero{
   position:relative;overflow:hidden;
-  background:linear-gradient(180deg,#051019 0%,#081C26 60%,#051019 100%);
+  background:#08141C;
   color:#fff;
   padding:90px 0 160px;
 }
 .hero-image{
   position:absolute;inset:0;
-  background-size:cover;background-position:center right;
-  opacity:.55;
-  filter:saturate(1.1) contrast(1.05);
+  background-size:cover;background-position:center center;
+  opacity:1;
+  filter:saturate(1.12) contrast(1.08);
   animation:slowZoom 20s ease-in-out infinite alternate;
 }
 @keyframes slowZoom{
   from{transform:scale(1.0)}
-  to{transform:scale(1.08)}
+  to{transform:scale(1.06)}
 }
 .hero-overlay{
   position:absolute;inset:0;
   background:
-    radial-gradient(1100px 700px at 18% 35%,rgba(5,16,25,.97) 0%,rgba(5,16,25,.88) 30%,rgba(5,16,25,.55) 60%,rgba(5,16,25,.15) 90%),
-    linear-gradient(90deg,rgba(0,55,74,.9) 0%,rgba(0,55,74,.35) 55%,transparent 100%),
-    linear-gradient(180deg,rgba(5,16,25,.7) 0%,rgba(5,16,25,.35) 50%,rgba(5,16,25,.9) 100%);
+    linear-gradient(90deg,rgba(5,16,25,.88) 0%,rgba(5,16,25,.65) 35%,rgba(5,16,25,.15) 70%,transparent 100%),
+    linear-gradient(180deg,rgba(5,16,25,.25) 0%,transparent 30%,transparent 60%,rgba(5,16,25,.55) 100%);
 }
 .hero h1,.hero h2,.hero h3{color:#fff}
 .hero p{color:#c9d4e6}
