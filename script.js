@@ -61,7 +61,7 @@ function zizoeSubmit(e) {
     `Phone: ${phone}%0A` +
     `Suburb: ${suburb}%0A%0A` +
     `${msg}`;
-  window.open(`https://wa.me/27000000000?text=${text}`, '_blank', 'noopener');
+  window.open(`https://wa.me/27836270695?text=${text}`, '_blank', 'noopener');
   return false;
 }
 window.zizoeSubmit = zizoeSubmit;
