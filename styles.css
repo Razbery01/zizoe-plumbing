@@ -178,7 +178,7 @@ ul{padding:0;margin:0;list-style:none}
 .hero-image{
   position:absolute;inset:0;
   background-size:cover;background-position:center right;
-  opacity:.35;
+  opacity:.55;
   filter:saturate(1.1) contrast(1.05);
   animation:slowZoom 20s ease-in-out infinite alternate;
 }
@@ -189,9 +189,9 @@ ul{padding:0;margin:0;list-style:none}
 .hero-overlay{
   position:absolute;inset:0;
   background:
-    radial-gradient(1100px 700px at 18% 30%,rgba(5,16,25,.96) 0%,rgba(5,16,25,.82) 35%,rgba(5,16,25,.35) 70%,transparent 100%),
-    linear-gradient(90deg,rgba(0,55,74,.85) 0%,rgba(0,55,74,.2) 60%,transparent 100%),
-    linear-gradient(180deg,rgba(5,16,25,.65) 0%,rgba(5,16,25,.35) 50%,rgba(5,16,25,.85) 100%);
+    radial-gradient(1100px 700px at 18% 35%,rgba(5,16,25,.97) 0%,rgba(5,16,25,.88) 30%,rgba(5,16,25,.55) 60%,rgba(5,16,25,.15) 90%),
+    linear-gradient(90deg,rgba(0,55,74,.9) 0%,rgba(0,55,74,.35) 55%,transparent 100%),
+    linear-gradient(180deg,rgba(5,16,25,.7) 0%,rgba(5,16,25,.35) 50%,rgba(5,16,25,.9) 100%);
 }
 .hero h1,.hero h2,.hero h3{color:#fff}
 .hero p{color:#c9d4e6}
