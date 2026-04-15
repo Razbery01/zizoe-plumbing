@@ -634,6 +634,64 @@ ul{padding:0;margin:0;list-style:none}
   .work-item.wk-tall{grid-column:span 1;grid-row:span 2}
 }
 
+/* ----- Location / Map ----- */
+.location{background:var(--grey-bg)}
+.location-grid{
+  display:grid;grid-template-columns:1.4fr 1fr;gap:0;
+  border-radius:var(--radius-lg);overflow:hidden;
+  box-shadow:0 30px 60px rgba(8,20,28,.12);
+  background:#fff;
+}
+.map-wrap{
+  position:relative;min-height:460px;
+  background:#e9edf2;
+}
+.map-wrap iframe{
+  position:absolute;inset:0;width:100%;height:100%;
+  filter:saturate(1.05);
+}
+.location-card{
+  padding:44px 40px;display:flex;flex-direction:column;
+  background:linear-gradient(160deg,#08141C 0%,#00374A 100%);
+  color:#fff;position:relative;overflow:hidden;
+}
+.location-card::before{
+  content:"";position:absolute;top:-80px;right:-80px;width:280px;height:280px;border-radius:50%;
+  background:radial-gradient(circle,rgba(27,160,192,.35),transparent 70%);
+  pointer-events:none;
+}
+.loc-icon{
+  width:56px;height:56px;border-radius:14px;
+  background:rgba(27,160,192,.18);color:var(--teal-glow);
+  display:flex;align-items:center;justify-content:center;
+  margin-bottom:20px;position:relative;z-index:2;
+}
+.loc-icon svg{width:28px;height:28px}
+.location-card h3{color:#fff;font-size:1.35rem;margin-bottom:14px;position:relative;z-index:2}
+.location-card address{
+  font-style:normal;color:#cfd9e6;line-height:1.7;font-size:.98rem;
+  margin-bottom:24px;position:relative;z-index:2;
+}
+.loc-meta{
+  display:grid;gap:14px;padding:18px 0;margin-bottom:22px;
+  border-top:1px solid rgba(255,255,255,.1);
+  border-bottom:1px solid rgba(255,255,255,.1);
+  position:relative;z-index:2;
+}
+.loc-meta strong{
+  display:block;color:#fff;font-family:'Space Grotesk',sans-serif;font-size:.85rem;
+  text-transform:uppercase;letter-spacing:.1em;margin-bottom:2px;
+}
+.loc-meta span{display:block;color:#9fb0c9;font-size:.95rem}
+.loc-meta a{color:var(--teal-glow);font-weight:700}
+.loc-meta a:hover{color:#fff}
+.location-card .btn{align-self:flex-start;position:relative;z-index:2}
+@media (max-width:900px){
+  .location-grid{grid-template-columns:1fr}
+  .map-wrap{min-height:340px;order:2}
+  .location-card{order:1;padding:36px 28px}
+}
+
 /* ----- Area pills — hero highlight ----- */
 .area-pill-hero{
   background:var(--teal);color:#fff;border-color:var(--teal);
