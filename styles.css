@@ -171,7 +171,10 @@ ul{padding:0;margin:0;list-style:none}
 /* ----- Hero ----- */
 .hero{
   position:relative;overflow:hidden;
-  background:#08141C;
+  background:
+    radial-gradient(1100px 600px at 85% 20%,rgba(27,160,192,.35),transparent 65%),
+    radial-gradient(900px 500px at 10% 15%,rgba(0,99,124,.55),transparent 60%),
+    linear-gradient(180deg,#00374A 0%,#00637C 55%,#004E64 100%);
   color:#fff;
   padding:90px 0 160px;
 }
@@ -179,8 +182,9 @@ ul{padding:0;margin:0;list-style:none}
   position:absolute;inset:0;
   background-size:cover;background-position:center center;
   opacity:1;
-  filter:saturate(1.12) contrast(1.08);
+  filter:saturate(1.1) contrast(1.06);
   animation:slowZoom 20s ease-in-out infinite alternate;
+  mix-blend-mode:normal;
 }
 @keyframes slowZoom{
   from{transform:scale(1.0)}
@@ -189,8 +193,8 @@ ul{padding:0;margin:0;list-style:none}
 .hero-overlay{
   position:absolute;inset:0;
   background:
-    linear-gradient(90deg,rgba(5,16,25,.88) 0%,rgba(5,16,25,.65) 35%,rgba(5,16,25,.15) 70%,transparent 100%),
-    linear-gradient(180deg,rgba(5,16,25,.25) 0%,transparent 30%,transparent 60%,rgba(5,16,25,.55) 100%);
+    linear-gradient(90deg,rgba(0,55,74,.92) 0%,rgba(0,55,74,.55) 35%,rgba(0,99,124,.2) 65%,transparent 100%),
+    linear-gradient(180deg,rgba(0,55,74,.3) 0%,transparent 35%,transparent 60%,rgba(0,55,74,.55) 100%);
 }
 .hero h1,.hero h2,.hero h3{color:#fff}
 .hero p{color:#c9d4e6}
