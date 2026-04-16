@@ -117,13 +117,16 @@ ul{padding:0;margin:0;list-style:none}
 .topbar .tb-item{display:inline-flex;align-items:center;margin-right:18px;opacity:.95}
 .topbar .tb-phone{display:inline-flex;align-items:center;gap:6px;color:#fff;font-weight:700;margin-right:14px;white-space:nowrap}
 .topbar .tb-phone:hover{text-decoration:underline}
-.topbar .tb-wa{
+.topbar .tb-wa,
+.topbar .tb-ig{
   display:inline-flex;align-items:center;justify-content:center;
   width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.15);
-  color:#fff;transition:background .2s;flex:none;
+  color:#fff;transition:background .2s,color .2s,transform .2s;flex:none;
 }
-.topbar .tb-wa svg{width:18px;height:18px;margin:0}
+.topbar .tb-wa svg,
+.topbar .tb-ig svg{width:18px;height:18px;margin:0}
 .topbar .tb-wa:hover{background:#fff;color:var(--teal)}
+.topbar .tb-ig:hover{background:#fff;color:#E4405F;transform:scale(1.05)}
 @media (max-width:900px){
   .topbar .tb-hide-sm{display:none}
 }
@@ -132,8 +135,8 @@ ul{padding:0;margin:0;list-style:none}
   .topbar .tb-item{margin-right:0}
   .topbar .tb-item svg{margin-right:4px;width:14px;height:14px}
   .topbar .tb-phone{margin-right:10px;font-size:.8rem}
-  .topbar .tb-wa{width:28px;height:28px}
-  .topbar .tb-wa svg{width:15px;height:15px}
+  .topbar .tb-wa,.topbar .tb-ig{width:28px;height:28px}
+  .topbar .tb-wa svg,.topbar .tb-ig svg{width:15px;height:15px}
 }
 @media (max-width:420px){
   .topbar .tb-item{display:none}
@@ -259,6 +262,14 @@ ul{padding:0;margin:0;list-style:none}
   color:#8EF0FF;background:rgba(0,99,124,.18);border-color:rgba(0,99,124,.4);
 }
 .hero-sub{font-size:1.1rem;max-width:620px;margin-bottom:30px}
+.area-highlight{
+  position:relative;display:inline-block;
+  color:#fff;font-weight:700;
+  padding:1px 6px;border-radius:6px;
+  background:linear-gradient(120deg,rgba(27,160,192,.55) 0%,rgba(0,99,124,.65) 100%);
+  box-shadow:inset 0 -2px 0 rgba(127,214,232,.9);
+  white-space:nowrap;
+}
 .hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
 .hero-trust{
   display:flex;flex-wrap:wrap;gap:18px 26px;
