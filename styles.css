@@ -640,7 +640,7 @@ ul{padding:0;margin:0;list-style:none}
   padding:26px 0;position:relative;z-index:4;
 }
 .trustbar-inner{
-  display:grid;grid-template-columns:repeat(5,1fr);gap:18px;
+  display:grid;grid-template-columns:repeat(4,1fr);gap:18px;
 }
 .tbar-item{
   display:flex;align-items:center;gap:14px;
